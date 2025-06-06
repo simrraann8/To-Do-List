@@ -1,0 +1,149 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Your top-level wrapper takes full height */
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* You can change to center if you want vertical centering */
+  padding-bottom: 50px; /* so tasks don't touch bottom */
+}
+
+body {
+  background-color: #e6d5a9;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.heading {
+  color: #2e5e4e;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.image {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  margin-top: 50px;
+}
+
+.inputTask {
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  outline: none;
+  padding: 8px 12px;
+  border: 1px solid #aaa;
+  transition: box-shadow 0.3s ease;
+  font-size: 16px;
+}
+
+.inputTask:focus {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.addition {
+  height: 15px;
+  width: 15px;
+  object-fit: contain;
+  margin-top: 2px;
+  margin-left: -8px;
+}
+
+.task-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+  width: 400px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 16px;
+  text-align: center;
+}
+
+.task ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.task li {
+  padding: 8px 12px;
+  margin: 6px 0;
+  background-color: #fff8dc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+.dark-mode .task {
+  background-color: #2e2e2e;
+  border-color: #444;
+  color: #f5f5f5;
+}
+
+.dark-mode .inputTask {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+.dark-mode ul li {
+  background-color: #444;
+  color: #fff;
+  margin: 6px 0;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.toggle-btn {
+  margin-left: 12px;
+  padding: 6px 10px;
+  font-size: 18px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
